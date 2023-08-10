@@ -1,0 +1,15 @@
+<svg id="Icons_Indicators-_-System-Icons-_-control_panel-_-_333333" data-name="Icons+Indicators-/-System-Icons-/-control_panel-/-#333333" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="control-panel">
+    <rect id="Rectangle" width="24" height="24" fill="none"/>
+    <rect id="Rectangle-2" data-name="Rectangle" width="17" height="17" rx="1.45" transform="translate(3.5 3.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path" d="M12,10.5v-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    <path id="Path-2" data-name="Path" d="M12,17.5v-5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    <rect id="Rectangle-3" data-name="Rectangle" width="3" height="1.982" rx="0.43" transform="translate(10.5 10.517)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path-3" data-name="Path" d="M17,7.5v-1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    <path id="Path-4" data-name="Path" d="M17,17.5v-8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    <rect id="Rectangle-4" data-name="Rectangle" width="3" height="1.982" rx="0.43" transform="translate(15.5 7.517)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path-5" data-name="Path" d="M7,15.5v2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    <path id="Path-6" data-name="Path" d="M7,6.5v7" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+    <rect id="Rectangle-5" data-name="Rectangle" width="3" height="1.982" rx="0.43" transform="translate(5.5 13.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

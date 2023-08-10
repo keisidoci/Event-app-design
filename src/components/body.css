@@ -1,0 +1,58 @@
+.body{
+   font-family:url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+}
+
+.home{
+   color: white;
+   text-align: left;
+   width: 89px;
+   height: 24px;
+   margin-bottom: 16px;
+   margin-left: 16px;
+   font-size: 18px;
+   white-space: nowrap;
+}
+.card-row{
+   margin-left: 16px;
+   display: flex; /* Change to flex display */
+   gap: 1.2rem;
+   overflow-x: auto;
+}
+.button-component{
+   margin-top: 16px;
+   margin-left: 16px;
+   margin-right: 12px;
+   display: flex; /* Change to flex display */
+   gap: 1.2rem;
+   overflow-x: auto;
+}
+.event{
+   font-size: 18px;
+   color: white;
+   line-height: 24px;
+   width: 150px;
+   height: 24px;
+   margin-left: 14px;
+   white-space: nowrap;
+}
+.total{
+  font-size: 14px;
+  color: #CCCCCC;
+  text-align: left;
+  margin-left: 16px;
+  width: 110px;
+  height: 19px;
+  line-height: 19px;
+}
+.button-row {
+   margin-left: 16px;
+    display: grid;
+   grid-auto-flow: column;
+   gap: 0.75rem;
+   overflow-x: auto; 
+   overscroll-behavior-x: contain; 
+   scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+   scrollbar-color: transparent;
+ }

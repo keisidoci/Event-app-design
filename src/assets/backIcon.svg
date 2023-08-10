@@ -1,0 +1,6 @@
+<svg id="Icons_Indicators-_-System-Icons-_-chevron_right-_-_333333" data-name="Icons+Indicators-/-System-Icons-/-chevron_right-/-#333333" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="chevron_right">
+    <path id="bg" d="M0,24H24V0H0Z" transform="translate(24) rotate(90)" fill="rgba(216,216,216,0)" fill-rule="evenodd"/>
+    <path id="Shape" d="M17,3.5,8.5,12,17,20.5" transform="translate(-1.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+/* .buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.button-style{
+    background-color: #1E1D23;
+    border: 0px;
+    color: #fff;
+    height: 34px;
+    border-radius: 5px;
+
+}
+
+.button-style:hover{
+    background-color: #026CDF;
+    border: 0px;
+    color: #fff;
+}
+
+.button-style:onClick{
+    background-color: #026CDF;
+    border: 0px;
+    color: #fff;
+}
+
+.button-style:active{
+    background-color: #026CDF;
+    border: 0px;
+    color: #fff;
+}

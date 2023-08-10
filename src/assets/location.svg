@@ -1,0 +1,7 @@
+<svg id="Icons_Indicators-_-System-Icons-_-location-_-_333333" data-name="Icons+Indicators-/-System-Icons-/-location-/-#333333" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="location">
+    <path id="bg" d="M0,0H24V24H0Z" fill="rgba(216,216,216,0)" fill-rule="evenodd"/>
+    <path id="Shape" d="M14.475,6.525a3.5,3.5,0,1,1-4.95,0,3.5,3.5,0,0,1,4.95,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1" fill-rule="evenodd"/>
+    <path id="Shape-2" data-name="Shape" d="M13.908,19.26c1.931-2.385,4.592-6.443,4.592-9.915A6.608,6.608,0,0,0,12,2.5,6.513,6.513,0,0,0,5.5,9.234C5.5,14.422,12,21.5,12,21.5s1.445-1.669,1.908-2.24Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+  </g>
+</svg>

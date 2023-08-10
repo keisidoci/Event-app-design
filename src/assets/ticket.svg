@@ -1,0 +1,12 @@
+<svg id="Icons_Indicators-_-System-Icons-_-parking_ticket-_-_333333" data-name="Icons+Indicators-/-System-Icons-/-parking_ticket-/-#333333" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="parking-ticket">
+    <rect id="Rectangle" width="24" height="24" fill="none"/>
+    <circle id="Oval" cx="1" cy="1" r="1" transform="translate(16 8)" fill="#fff"/>
+    <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(16 6)" fill="#fff"/>
+    <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1" transform="translate(16 16)" fill="#fff"/>
+    <circle id="Oval-4" data-name="Oval" cx="1" cy="1" r="1" transform="translate(16 10)" fill="#fff"/>
+    <circle id="Oval-5" data-name="Oval" cx="1" cy="1" r="1" transform="translate(16 12)" fill="#fff"/>
+    <circle id="Oval-6" data-name="Oval" cx="1" cy="1" r="1" transform="translate(16 14)" fill="#fff"/>
+    <path id="Path" d="M20,17.5A1.5,1.5,0,0,0,21.5,16V13.935a2,2,0,0,1,0-3.875V8A1.5,1.5,0,0,0,20,6.5H4A1.5,1.5,0,0,0,2.5,8v2.066a2,2,0,0,1,0,3.875V16A1.5,1.5,0,0,0,4,17.5Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill-rule="evenodd"/>
+  </g>
+</svg>

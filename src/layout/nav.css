@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.app{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.appname{
+    color: white;
+    margin-left: 16px;
+    margin-top: 25px;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.profile{
+    border-radius: 57px;
+    width: 29px;
+    height: 29px;
+    margin-top: 24px;
+    margin-right: 16px;
+}
+.name{
+    width: 34px;
+    height: 22px;
+    color: white;
+    margin-top: 28px;
+    margin-right: 8px;
+}
