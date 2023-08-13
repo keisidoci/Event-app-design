@@ -10,10 +10,11 @@ const Nav = () => {
         <h3 className='appname'><strong>AppName</strong></h3>
          </div>
          <div className='profile-info'>
-        <h4 className='name'>John</h4>
+        <p className='name'>John</p>
         <img src={profilePic} alt='profile' className='profile' />
         </div>
     </div>
+  <hr/>
     </nav>
   )
 }

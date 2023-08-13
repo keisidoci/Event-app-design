@@ -16,7 +16,7 @@
 
 .profile-info{
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     flex-direction: row;
 }
 .profile{
@@ -25,6 +25,7 @@
     height: 29px;
     margin-top: 24px;
     margin-right: 16px;
+    object-fit: cover;
 }
 .name{
     width: 34px;
@@ -32,4 +33,50 @@
     color: white;
     margin-top: 28px;
     margin-right: 8px;
+    font-size: 16px;
+    font-weight: normal;
+}
+hr{
+    color: transparent;
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+      /* margin-top: 32px; 
+      margin-right: 108px;
+     margin-left: 108px;  */
+     align-items: center;
+}
+.appname{
+    font-size: 20px;
+    margin-right: 158px;
+}
+.name{
+    font-size: 18px;
+}
+.profile{
+    width: 42px;
+    height: 42px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 8px;
+    border-radius: 21px;
+}
+.profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    /* margin-right: 108px;
+     margin-left: 108px; */
+     align-items: center;
+     width: 1064px;
+     color: white;
+     margin-bottom: 40px;
+     display: block;
+}
 }

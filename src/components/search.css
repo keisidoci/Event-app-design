@@ -45,4 +45,16 @@
   transform: rotate(90deg);
   border: 1px solid #fff;
   stroke-linecap: round;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .searchBar{
+    margin-left: 250px;
+    margin-right: 251px;
+    width: 565px;
+  }
+  .search{
+    width: 100%;
+  }
 }

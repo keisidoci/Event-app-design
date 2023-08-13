@@ -1,8 +1,3 @@
-.body{
-   font-family:url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-}
-
 .home{
    color: white;
    text-align: left;
@@ -55,4 +50,23 @@
    scroll-snap-type: x mandatory;
     scrollbar-width: none;
    scrollbar-color: transparent;
+   font-size: 16px;
+ }
+ @media (min-width: 768px) {
+   .body{
+      margin-left: 108px;
+      margin-right: 108px;
+    }
+    .home{
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .event{
+      font-size: 20px;
+      width: 167px;
+      height: 27px;
+    }
+    .button-row{
+      width: 430px;
+    }
  }

@@ -37,7 +37,7 @@ const EventInfo = () => {
             <div className='row2'>
 
                 <div className='event-name'>
-                    <div>
+                    <div className='dave'>
                         <h3>Dave</h3>
                     </div>
                     <div className='eventPrice'>
@@ -45,12 +45,12 @@ const EventInfo = () => {
                     </div>
                 </div> 
         
-            
+                <div className='event-web'>
                 <div className='calendar'>
                     <div className='icon'><img src={calendar}></img></div>
-                    <div className='month'><strong>02</strong><br/>September</div>
-                    <hr className='hr'/>
-                    <div ><p className='time'><strong>10:00 PM</strong><br/>Tuesday</p></div>
+                    <div className='month'><strong>02 </strong><br className='br'/>September</div>
+                    <hr className='hr1'/>
+                    <div className='time'><p><strong className='no-strong'>10:00 PM </strong><br className='br'/>Tuesday</p></div>
                 </div>
 
                 <div className='location'>
@@ -62,14 +62,17 @@ const EventInfo = () => {
                 <div className='icon3'><img src={ticket}></img></div>
                 <div className='info-ticket'><p>5 tickets</p></div>
                 </div>
+              </div>
 
             </div>    
        </div>
         <div className='part2'>
+            <div className='extended-info'>
             <h4 className='about'>About event</h4>
             <p className='about-text'>Lorem ipsum dolor sit amet. Ea nobis corporis ad fugiat culpa ut quibusdam soluta aut aliquid saepe. 
             Est explicabo neque aut molestiae doloribus At fugiat ipsum non cupiditate soluta sed dolorem asperiores aut quia perferendis sed possimus officiis.</p>
-        
+        </div>
+        <div className='buy-ticket'>
                 <button className='ticketBtn'>
                 <div>
                     <img src={ticket} className='ticketIcon'></img>
@@ -78,6 +81,7 @@ const EventInfo = () => {
                     <p>Tickets</p>
                 </div>
                 </button>
+            </div>
         </div>
 
    </div>

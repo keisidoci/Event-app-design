@@ -3,7 +3,6 @@
     display: flex;
     width: 396px;
     height: 328px;
-    background-size: cover;
     position: relative;
     overflow: hidden;
     flex-direction: column;
@@ -14,6 +13,26 @@
     margin: 16px 16px 16px 16px;
 
 }
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 5px;
+  }
+  
+  .event-card-content {
+    height: 328px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
 .event-card-date{
     margin-left: 334px;
@@ -29,21 +48,17 @@
     align-items: center;
     text-align: center;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+   
 }
 .event-info{
-    width: 396px;
-    height: 111px;
     background: linear-gradient(#2C2C2C66, #72727200) ;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     filter: brightness(-8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    display: flex;
 }
 .event-info-text{
     margin-left: 16px;
-    font: normal normal medium 18px/24px Open Sans;
 }
 .event-in{
     margin-top: 0px;
@@ -55,6 +70,7 @@
     width: 245px;
     height: 48px;
     line-height: 24px;
+    font-size: 18px;
 }
 
 .event-price{
@@ -68,8 +84,66 @@
     justify-content: center;
     position: absolute;
     top: 202px;
-    right: 33px;
+    right: 20px;
     z-index: 1;
     font-size: 14px;
     font-weight: bold;
 }
+
+
+@media (min-width: 768px) {
+    .event-card-container{
+        width: 1064px;
+        height: 141px;
+        border-radius: 5px;
+        display: flex;
+        background-color: #1E1D23;
+        
+    }
+    .card-background{
+        position: absolute;
+        left: 0;
+        width: 404px;
+        height: 100%;
+        background-position: left top -50px;
+        mask-image: linear-gradient(to right, black, transparent 95%);
+        z-index: 1;
+    }
+    .event-card-content {
+        height: 141px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .event-price{
+        position: absolute;
+        top: 53px;
+        right: 32px;
+    }
+    .event-card-date{
+        position: relative;
+        top: 85px;
+        z-index: 1;
+        width: 95px;
+        height: 36px;
+        font-size: 16px;
+        background: linear-gradient(#2C2C2C66,#72727200);
+    }
+    .event-info{
+        background: none;
+        position: relative;
+        right: 140px;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+    .no-br{
+        display: none;
+    }
+    .event-title-name{
+        width: 500px;
+        height: 30px;
+    }
+  }
+
+
+

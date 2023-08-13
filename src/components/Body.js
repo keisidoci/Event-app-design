@@ -27,6 +27,12 @@ const suggestionData = [
     time: "19:30",
     title: "Dave - We're all alone in this together UK tour 2022",
     img: img1,
+  },
+  {
+    date: "24 Feb",
+    time: "19:30",
+    title: "Dave - We're all alone in this together UK tour 2022",
+    img: img5,
   }
 ];
 
@@ -69,7 +75,7 @@ const Body = () => {
       <Nav/>
       <Search/>
     <div className="home">
-      <h4>Suggested</h4>
+      <p>Suggested</p>
       </div>
       <div className="card-row">
   {suggestionData.map((suggestion, index) => (
@@ -88,11 +94,11 @@ const Body = () => {
       </div>
       <div className="button-row">
           {buttonsData.map((title, index) => (
-            <Buttons title={title} key={index} />
+            <Buttons title={title} key={index} selected={index === 0}/>
           ))}
         </div>
       <div >
-      <p className="total">Total events:150</p>
+      <p className="total">Total events: 150</p>
       </div>
       <div className="event-component" onClick={() => handleEventCardClick()}>
   {eventData.map((event, index) => (

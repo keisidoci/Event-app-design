@@ -1,12 +1,10 @@
-
 .eventInfo-card{
     display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  color: white;
-  font-family: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  color:  #FFFFFF;
 }
 .bcg-img{
     height: 585px;
@@ -30,12 +28,13 @@
     margin-left: 16px;
 }
 .row2{
-    height: 585px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: absolute;
-    z-index: 1;
+  height: 385px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 200px;
 }
 
 .backBtn{
@@ -76,16 +75,16 @@
   height: 36px;
   width: 76px;
   background-color: #fff;
-  color: #2c2c2c;
   font-size: 14px;
   font-weight: bold;
+  color: #2C2C2C !important;
   }
 
   .calendar{
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-left: 16px;
   margin-right: 156px;
   }
@@ -107,17 +106,18 @@
   font-size: 16px;
   }
 
-.hr{
+.hr1{
   margin: 0px;
   margin-left: 24px;
   margin-right: 24px;
   height: 41px;
+  display: block;
   }
   
   .time{
     text-align: left;
     font-size: 16px;
-    width: 70px;
+    width: 90px;
   }
   
   .location{
@@ -182,12 +182,11 @@
     align-items: flex-start;
   }
   .about{
-    position: relative;
-    top: 40px;
-    margin-bottom: 38px;
+    text-align: left;
   }
   .about-text{
     text-align: left;
+    margin-bottom: 55px;
   }
   .ticketBtn{
     background-color: #026cdf;
@@ -202,7 +201,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
-  margin-top: 55px;
+  
   }
 
   .ticketIcon{
@@ -213,4 +212,96 @@
   .text-t{
     margin-top: 12px;
   margin-bottom: 12px;
+  }
+
+
+  @media (min-width: 768px) {
+    .row1{
+      margin-left: 109px;
+    }
+    .concert-name{
+      margin-left: 480px;
+      font-size: 18px;
+      display: flex;
+    }
+    .row2{
+      margin-left: 109px;
+      height: 385px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: absolute;
+      margin-top: 150px;
+    }
+    .hr1{
+      rotate: 90deg;
+      width: 0px;
+      height: 6px;
+    }
+    .eventPrice{
+      width: 82px;
+      height: 36px;
+      font-size: 16px;
+      
+    }
+    .dave{
+      font-size: 24px;
+    }
+    .event-web{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .part2{
+      margin-left: 125px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .about-text{
+      width: 569px;
+      font-size: 16px;
+      height: 88px;
+    }
+   .buy-ticket{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 140px;
+    width: 298px;
+   }
+   .bcg-img{
+    mask-image: linear-gradient(to bottom, black, transparent 100%);
+   }
+   .br{
+    display: none;
+   }
+   
+   .month{
+    font-weight: 10;
+    
+   }
+   .time{
+    width: 160px;
+   }
+   
+   .calendar{
+    margin-right: 60px;
+    align-items: center;
+    font-size: 16px;
+   }
+   .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+   }
+   .ticket{
+    font-size: 16px;
+    margin-bottom: 15px;
+   }
+   .no-strong{
+    font-weight: normal;
+   }
   }
