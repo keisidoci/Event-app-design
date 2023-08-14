@@ -33,6 +33,12 @@ const suggestionData = [
     time: "19:30",
     title: "Dave - We're all alone in this together UK tour 2022",
     img: img5,
+  },
+  {
+    date: "24 Feb",
+    time: "19:30",
+    title: "Dave - We're all alone in this together UK tour 2022",
+    img: img5,
   }
 ];
 

@@ -36,7 +36,6 @@
 
 .event-card-date{
     margin-left: 334px;
-    margin-right: 46px;
     margin-top: 10px;
     background: linear-gradient(#2C2C2C66, #72727200) ;
     width: 46px;
@@ -84,16 +83,18 @@
     justify-content: center;
     position: absolute;
     top: 202px;
-    right: 20px;
+    right: 16px;
     z-index: 1;
     font-size: 14px;
     font-weight: bold;
+   
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .event-card-container{
-        width: 1064px;
+      width: 100%;
+        box-sizing: border-box;
         height: 141px;
         border-radius: 5px;
         display: flex;
@@ -121,8 +122,10 @@
         right: 32px;
     }
     .event-card-date{
+        margin-left: 351px;
         position: relative;
         top: 85px;
+        right: 34px;
         z-index: 1;
         width: 95px;
         height: 36px;

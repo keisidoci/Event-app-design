@@ -31,6 +31,7 @@ const EventInfo = () => {
                     <div className='concert-name'>
                         <h3>Dave</h3>  
                     </div>
+                    <div></div>
                 </div>
             </div>
 
@@ -48,9 +49,17 @@ const EventInfo = () => {
                 <div className='event-web'>
                 <div className='calendar'>
                     <div className='icon'><img src={calendar}></img></div>
-                    <div className='month'><strong>02 </strong><br className='br'/>September</div>
+                 
+                        <div className='calendar-month'>
+                    <div className='month'><strong>02 </strong></div>
+                    <div className='sep'>September</div>
+                    </div>
                     <hr className='hr1'/>
-                    <div className='time'><p><strong className='no-strong'>10:00 PM </strong><br className='br'/>Tuesday</p></div>
+                    <div className='calendar-time'>
+                    <div className='time'><strong className='no-strong'>10:00 PM </strong></div>
+                    <div className='tuesd'>Tuesday</div>
+                    </div>
+                   
                 </div>
 
                 <div className='location'>

@@ -3,6 +3,7 @@ import "../components/search.css"
 
 const Search = () => {
   return (
+    <div className="search-bar-container">
     <div className="searchBar">
       <div className="icon-search">
         <i
@@ -14,6 +15,7 @@ const Search = () => {
       <div className="icon-sliders">
       <i class="fa-solid fa-sliders" style={{color: '#ffffff'}}></i>
       </div>
+    </div>
     </div>
   )
 }

@@ -77,7 +77,8 @@
   background-color: #fff;
   font-size: 14px;
   font-weight: bold;
-  color: #2C2C2C !important;
+  color: #2C2C2C;
+  margin-right: 17px;
   }
 
   .calendar{
@@ -87,6 +88,17 @@
   justify-content: flex-start;
   margin-left: 16px;
   margin-right: 156px;
+  }
+  .calendar-month,
+  .calendar-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sep,.tuesd{
+    color: #CCCCCC;
+    font-size: 14px;
   }
 
   .icon{
@@ -215,45 +227,56 @@
   }
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px ) {
+    
     .row1{
-      margin-left: 109px;
+      margin-left: 190px;
+      margin-right: 190px;
+      display: flex;
+      justify-content: space-between;
     }
     .concert-name{
-      margin-left: 480px;
       font-size: 18px;
       display: flex;
+      margin-left: 0;
     }
     .row2{
-      margin-left: 109px;
+      left: 190px;
       height: 385px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      position: absolute;
       margin-top: 150px;
     }
+    .event-name{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 0;
+    }
     .hr1{
-      rotate: 90deg;
-      width: 0px;
-      height: 6px;
+      rotate: calc(90deg);
+      height: 2px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
     .eventPrice{
       width: 82px;
       height: 36px;
       font-size: 16px;
-      
+      margin-left: 758px;
     }
     .dave{
       font-size: 24px;
     }
     .event-web{
       display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     }
     .part2{
-      margin-left: 125px;
+      margin-left: 195px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -267,11 +290,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 140px;
     width: 298px;
    }
    .bcg-img{
     mask-image: linear-gradient(to bottom, black, transparent 100%);
+    height: 525px;
    }
    .br{
     display: none;
@@ -281,12 +304,24 @@
     font-weight: 10;
     
    }
+   .tuesd{
+    display: none;
+   }
+   .calendar-month{
+    flex-direction: row;
+   }
+   .sep{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 8px;
+   }
    .time{
     width: 160px;
    }
    
    .calendar{
-    margin-right: 60px;
+    margin-right: 0px;
+    margin-left: 0;
     align-items: center;
     font-size: 16px;
    }
@@ -296,10 +331,13 @@
     align-items: center;
     flex-direction: row;
     margin-bottom: 15px;
+    margin-right: 0px;
    }
    .ticket{
     font-size: 16px;
     margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 80px;
    }
    .no-strong{
     font-weight: normal;
