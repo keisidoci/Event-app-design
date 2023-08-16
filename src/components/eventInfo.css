@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   color:  #FFFFFF;
+  align-items: center;
 }
 .bcg-img{
     height: 585px;
@@ -13,6 +14,8 @@
     background-position: center;
     mask-image: linear-gradient(to bottom, black, transparent 80%);
    overflow: hidden;
+   width: 100%;
+   position: absolute;
 }
 .part1{
     display: flex;
@@ -21,11 +24,12 @@
     position: relative;
 }
 .row1{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 16px;
+  margin-top: 24px;
 }
 .row2{
   height: 385px;
@@ -33,8 +37,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: absolute;
+  position: relative;
   margin-top: 200px;
+  width: 100%;
 }
 
 .backBtn{
@@ -45,15 +50,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
 }
 .back-icon {
     width: 24px;
     height: 24px;
   }
 .concert-name{
-    margin-left: 134px;
-    margin-top: 17px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
 .event-name{
@@ -63,8 +67,8 @@
   align-items: center;
   flex-wrap: nowrap;
   margin-left: 16px;
-  margin-right: 17px;
-  width: 90%;
+  width: calc(100% - 32px);
+  margin-bottom: 35px;
   }
   
   .eventPrice{
@@ -78,7 +82,6 @@
   font-size: 14px;
   font-weight: bold;
   color: #2C2C2C;
-  margin-right: 17px;
   }
 
   .calendar{
@@ -86,8 +89,6 @@
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 16px;
-  margin-right: 156px;
   }
   .calendar-month,
   .calendar-time{
@@ -124,6 +125,8 @@
   margin-right: 24px;
   height: 41px;
   display: block;
+  opacity: 1;
+  color: #FFFFFF
   }
   
   .time{
@@ -137,10 +140,16 @@
     align-items: center;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 16px;
-    margin-right: 156px;
+    flex-shrink: 0;
   }
-
+  .event-web{
+    width: 100%;
+    margin-left: 16px;
+  }
+  .dave{
+    font-weight: bold;
+    font-size: 20px;
+  }
   .icon2{
     background: rgba(255, 255, 255, 0.1);
   width: 42px;
@@ -163,8 +172,6 @@
     display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 16px;
-  margin-right: 156px;
   text-align: left;
   }
   .icon3{
@@ -188,16 +195,20 @@
   }
   .part2{
     display: flex;
-    margin-left: 16px;
-    margin-right: 16px;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    margin-left: 16px;
   }
   .about{
     text-align: left;
+    font-size: 16px;
+    font-weight: bold;
   }
   .about-text{
     text-align: left;
+    font-size: 16px;
+    font-weight: normal;
     margin-bottom: 55px;
   }
   .ticketBtn{
@@ -224,10 +235,12 @@
   .text-t{
     margin-top: 12px;
   margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: normal;
   }
 
 
-  @media (min-width: 1000px ) {
+  @media (min-width: 768px ) {
     
     .row1{
       margin-left: 190px;
@@ -241,11 +254,12 @@
       margin-left: 0;
     }
     .row2{
-      left: 190px;
       height: 385px;
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      margin-top: 150px;
+      width: calc(100% - 390px);
+      top: 60px;
     }
     .event-name{
       display: flex;
@@ -255,18 +269,19 @@
     flex-wrap: nowrap;
     width: 100%;
     margin-left: 0;
+    margin-right: 0;
     }
     .hr1{
       rotate: calc(90deg);
-      height: 2px;
+      height: 5px;
       margin-left: 5px;
       margin-right: 5px;
+      color: #FFFFFF;
     }
     .eventPrice{
       width: 82px;
       height: 36px;
       font-size: 16px;
-      margin-left: 758px;
     }
     .dave{
       font-size: 24px;
@@ -274,17 +289,23 @@
     .event-web{
       display: flex;
     justify-content: flex-start;
+    align-items: center;
+    margin: 0;
     }
     .part2{
-      margin-left: 195px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 380px);
+      margin: 0;
     }
     .about-text{
       width: 569px;
-      font-size: 16px;
       height: 88px;
+    }
+    .about{
+      font-size: 18px;
     }
    .buy-ticket{
     display: flex;

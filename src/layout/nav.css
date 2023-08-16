@@ -2,39 +2,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
 }
 .app{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-}
-.appname{
-    color: white;
     margin-left: 16px;
     margin-top: 25px;
 }
 
 .profile-info{
     display: flex;
-    /* justify-content: flex-end; */
     flex-direction: row;
+    margin-top: 24px;
+    align-items: center;
 }
 .profile{
     border-radius: 57px;
     width: 29px;
     height: 29px;
-    margin-top: 24px;
     margin-right: 16px;
+    margin-left: 8px;
     object-fit: cover;
-}
-.name{
-    width: 34px;
-    height: 22px;
-    color: white;
-    margin-top: 28px;
-    margin-right: 8px;
-    font-size: 16px;
-    font-weight: normal;
 }
 hr{
     color: transparent;
@@ -43,16 +34,9 @@ hr{
     opacity: 0.1;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .container {
      align-items: center;
-}
-.appname{
-    font-size: 20px;
-    margin-right: 158px;
-}
-.name{
-    font-size: 18px;
 }
 .profile{
     width: 42px;

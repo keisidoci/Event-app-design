@@ -1,0 +1,58 @@
+.family {
+    font-family: "Open Sans", sans-serif;
+  margin: 0;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .regular {
+    font-weight: normal;
+  }
+  
+  .medium {
+    font-weight: 500;
+  }
+  
+  .semibold {
+    font-weight: 600;
+  }
+  
+  .h1 {
+    font-size: 14px;
+  }
+  .h2 {
+    font-size: 16px;
+  }
+  .h3 {
+    font-size: 18px;
+  }
+  .h4 {
+    font-size: 20px;
+  }
+  
+  .l13 {
+    line-height: 13px;
+  }
+  .l19 {
+    line-height: 19px;
+  }
+  .l22 {
+    line-height: 22px;
+  }
+  .l24 {
+    line-height: 24px;
+  }
+  .l27 {
+    line-height: 27px;
+  }
+  
+  
+  .white{
+      color: #fff;
+  }
+  
+  .gray{
+      color: #CCCCCC;
+  }

@@ -11,6 +11,8 @@ import img3 from "../assets/img3.jpg"
 import { useNavigate } from "react-router-dom"
 import Nav from "../layout/Nav"
 import Search from "./Search"
+import { useState, useEffect } from "react"
+import TextComponent from "./TextComponent"
 
 
 
@@ -75,13 +77,31 @@ const Body = () => {
   const handleEventCardClick = () => {
         navigate(`/Events`);
   };
+
+  const [selectedButton, setSelectedButton] = useState(buttonsData[0]);
+  useEffect(()=>{
+    console.log("selectedButton:", selectedButton);
+  },[selectedButton])
+
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth > 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   
   return (
     <div className="body">
       <Nav/>
       <Search/>
     <div className="home">
-      <p>Suggested</p>
+    <TextComponent label={"Suggested"} size={isSmallScreen ? "h4" : "h3"} weight={"regular"} lineheight={"l24"} color={"white"}/>
       </div>
       <div className="card-row">
   {suggestionData.map((suggestion, index) => (
@@ -95,16 +115,17 @@ const Body = () => {
   ))}
 </div>
 
-      <div >
-      <h4 className="event">Upcoming events</h4>
+      <div className="event">
+      <TextComponent label={"Upcoming Events"} size={isSmallScreen ? "h4" : "h3"} weight={"regular"} lineheight={"l24"} color={"white"}/>
       </div>
       <div className="button-row">
           {buttonsData.map((title, index) => (
-            <Buttons title={title} key={index} selected={index === 0}/>
+            <Buttons title={title} key={index} selected={selectedButton === title}
+            onClick={() => setSelectedButton(title)}/>
           ))}
         </div>
-      <div >
-      <p className="total">Total events: 150</p>
+      <div className="total">
+      <TextComponent label={"Total events: 150"} size={"h1"} weight={"regular"} lineheight={"l19"} color={"gray"}/>
       </div>
       <div className="event-component" onClick={() => handleEventCardClick()}>
   {eventData.map((event, index) => (

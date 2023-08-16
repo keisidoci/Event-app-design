@@ -1,15 +1,28 @@
 import React from 'react'
 import "../components/suggest.css"
-
+import TextComponent from './TextComponent'
 
 function Suggestions({date,time, title, img}) {
   return (
     <div className='card-component'>
     <div className='card'>
       <img src={img} className='background'/>
-      <h6 className='date'>{date}-{time}</h6>
-      <h4 className='title'>{title}</h4>
-      <a href=''><button className='button'>Tickets</button></a> 
+     <div className='date'>
+      <TextComponent  label={`${date} - ${time}`}
+            weight={"regular"}
+            lineheight={"l19"}
+            size={"h1"}
+            color={"white"}/>
+     </div>
+      <div className='title'>
+        <TextComponent label={title} weight={"bold"} lineheight={"l24"} size={"h3"} color={"white"}/>
+      </div>
+     <button className='button'><TextComponent  label={"Tickets"}
+          weight={"regular"}
+          lineheight={"l22"}
+          size={"h2"}
+          color={"white"}/>
+          </button>
     </div>
     </div>
   )
