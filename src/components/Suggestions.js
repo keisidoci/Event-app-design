@@ -6,7 +6,7 @@ function Suggestions({date,time, title, img}) {
   return (
     <div className='card-component'>
     <div className='card'>
-      <img src={img} className='background'/>
+      <img src={img} className='background' alt='bcgImage'/>
      <div className='date'>
       <TextComponent  label={`${date} - ${time}`}
             weight={"regular"}

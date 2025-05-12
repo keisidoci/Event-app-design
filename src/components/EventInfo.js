@@ -23,7 +23,7 @@ const EventInfo = () => {
     <div className='bcg-img' style={backgroundImage}>
         <div className='row1'>
                     <div className='backBtn' onClick={() => handleEventCardClick()}>
-                       <img src={backIcon} className="back-icon"></img>
+                       <img src={backIcon} className="back-icon" alt='backIcon'></img>
                     </div>
                     <div className='concert-name'>
                         Dave
@@ -45,7 +45,7 @@ const EventInfo = () => {
         
                 <div className='event-web'>
                 <div className='calendar'>
-                    <div className='icon'><img src={calendar}></img></div>
+                    <div className='icon'><img src={calendar} alt='calendar'></img></div>
                  
                         <div className='calendar-month'>
                     <div className='month'><strong>02 </strong></div>
@@ -60,12 +60,12 @@ const EventInfo = () => {
                 </div>
 
                 <div className='location'>
-                <div className='icon2'><img src={location}></img></div>
+                <div className='icon2'><img src={location} alt='location'></img></div>
                     <div className='info'><p>Amsterdam, Netherlands</p></div>
                 </div>
 
                 <div className='ticket'>
-                <div className='icon3'><img src={ticket}></img></div>
+                <div className='icon3'><img src={ticket} alt='ticket'></img></div>
                 <div className='info-ticket'><p>5 tickets</p></div>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const EventInfo = () => {
             <div className='buy-ticket'>
                     <button className='ticketBtn'>
                         <div>
-                            <img src={ticket} className='ticketIcon'></img>
+                            <img src={ticket} className='ticketIcon' alt='ticketIcon'></img>
                         </div>
                         <div className='text-t'>
                             Tickets

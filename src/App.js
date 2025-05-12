@@ -3,11 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  withRouter,
-  Redirect,
 } from "react-router-dom"
-import Nav from "./layout/Nav"
-import Search from "./components/Search"
 import Body from "./components/Body"
 import EventInfo from "./components/EventInfo"
 
