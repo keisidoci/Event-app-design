@@ -1,7 +1,7 @@
 import React from "react"
 import "../components/search.css"
 
-const Search = () => {
+const Search = ({handleCreateEventClick}) => {
   return (
     <div className="search-bar-container">
     <div className="searchBar">
@@ -9,13 +9,16 @@ const Search = () => {
         <i
           class="fa-solid fa-magnifying-glass"
           style={{ color: "#ffffff" }}
-        ></i>
-      </div>
+        />
         <input type="text" placeholder="Search all events..."className="search"></input>
+      </div>
       <div className="icon-sliders">
       <i class="fa-solid fa-sliders" style={{color: '#ffffff'}}></i>
       </div>
     </div>
+    <button className="create-event-btn" onClick={handleCreateEventClick}>
+        Create Event
+      </button>
     </div>
   )
 }

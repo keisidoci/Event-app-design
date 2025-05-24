@@ -75,7 +75,11 @@ const Body = () => {
   const navigate = useNavigate();
 
   const handleEventCardClick = () => {
-        navigate(`/Events`);
+    navigate(`/Events`);
+  };
+
+  const handleCreateEventClick = () => {
+    navigate('/create-event');
   };
 
   const [selectedButton, setSelectedButton] = useState(buttonsData[0]);
@@ -99,9 +103,11 @@ const Body = () => {
   return (
     <div className="body">
       <Nav/>
-      <Search/>
+      <Search handleCreateEventClick={handleCreateEventClick}/>
     <div className="home">
-    <TextComponent label={"Suggested"} size={isSmallScreen ? "h4" : "h3"} weight={"regular"} lineheight={"l24"} color={"white"}/>
+    <div className="header-section">
+      <TextComponent label={"Suggested"} size={isSmallScreen ? "h4" : "h3"} weight={"regular"} lineheight={"l24"} color={"white"}/>
+    </div>
       </div>
       <div className="card-row">
   {suggestionData.map((suggestion, index) => (

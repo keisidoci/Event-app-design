@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import Body from "./components/Body"
 import EventInfo from "./components/EventInfo"
+import CreateEvent from "./components/CreateEvent"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Body />}></Route>
           <Route path="/Events" element={<EventInfo/>}></Route>
+          <Route path="/create-event" element={<CreateEvent/>}></Route>
         </Routes>
         
       </div>

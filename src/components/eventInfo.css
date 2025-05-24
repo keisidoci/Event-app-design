@@ -2,7 +2,7 @@
     display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   color:  #FFFFFF;
   align-items: center;
@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .back-icon {
     width: 24px;
