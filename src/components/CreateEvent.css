@@ -25,6 +25,19 @@ input[type="time"] {
   font-family: inherit;
 }
 
+/* Remove Safari's date/time picker icon (optional) */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Makes the icon white-ish */
+  opacity: 0.7;
+}
+
+/* Or completely hide the icon if you want full control */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: flex;
+  /* -webkit-appearance: none; */
+}
 
 .create-event-container {
   max-width: 600px;

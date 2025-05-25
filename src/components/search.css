@@ -8,7 +8,7 @@
 .search {
   background-color: #1e1d23;
   border: none;
-  width: 346px;
+  /* width: 346px; */
   color: white;
   &::placeholder{
     color: #6b6a6e;
