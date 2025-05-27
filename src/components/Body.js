@@ -3,11 +3,11 @@ import "../components/body.css"
 import Suggestions from "../components/Suggestions"
 import Buttons from "./Buttons"
 import Events from "./Events"
-import img5 from "../assets/img5.jpeg"
-import img1 from "../assets/img1.jpg"
-import img2 from "../assets/img2.jpg"
-import img4 from "../assets/img4.jpg"
-import img3 from "../assets/img3.jpg"
+// import img5 from "https://d37kvo87lzs6gw.cloudfront.net/assets/img5.jpeg"
+// import img1 from "../assets/img1.jpg"
+// import img2 from "../assets/img2.jpg"
+// import img4 from "../assets/img4.jpg"
+// import img3 from "../assets/img3.jpg"
 import { useNavigate } from "react-router-dom"
 import Nav from "../layout/Nav"
 import Search from "./Search"
@@ -22,25 +22,25 @@ const suggestionData = [
     date: "24 Feb",
     time: "19:30",
     title: "Dave - We're all alone in this together UK tour 2022",
-    img: img5,
+    img: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img5.jpeg',
   },
   {
     date: "24 Feb",
     time: "19:30",
     title: "Dave - We're all alone in this together UK tour 2022",
-    img: img1,
+    img: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img1.jpg'
   },
   {
     date: "24 Feb",
     time: "19:30",
     title: "Dave - We're all alone in this together UK tour 2022",
-    img: img5,
+    img: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img5.jpeg',
   },
   {
     date: "24 Feb",
     time: "19:30",
     title: "Dave - We're all alone in this together UK tour 2022",
-    img: img5,
+    img: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img5.jpeg',
   }
 ];
 
@@ -51,7 +51,7 @@ const eventData = [
     price: "$45.00",
     name: "Dave",
     info: "Amsterdam, Netherlands - 10:00 PM",
-    background: img2,
+    background: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img2.jpg'
   },
   {
     date: "02",
@@ -59,7 +59,7 @@ const eventData = [
     price: "$45.00",
     name: "Dave - We're all alone in this together UK tour 2022",
     info: "Amsterdam, Netherlands - 10:00 PM",
-    background: img4,
+    background: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img4.jpg'
   },
   {
     date: "02",
@@ -67,7 +67,7 @@ const eventData = [
     price: "$45.00",
     name: "Dave - We're all alone in this together UK tour 2022",
     info: "Amsterdam, Netherlands - 10:00 PM",
-    background: img3,
+    background: 'https://d37kvo87lzs6gw.cloudfront.net/assets/img3.jpg'
   },
 ];
 

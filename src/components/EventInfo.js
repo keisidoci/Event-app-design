@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom"
 
 const EventInfo = () => {
     const backgroundImage = {
-        backgroundImage: `url(${img2})`,
+        backgroundImage: `url(https://d37kvo87lzs6gw.cloudfront.net/assets/img2.jpg)`,
     }
     const navigate = useNavigate();
 

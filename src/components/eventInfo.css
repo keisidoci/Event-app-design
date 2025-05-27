@@ -198,8 +198,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    margin-left: 16px;
+    /* width: 100%; */
+    margin-inline: 16px;
   }
   .about{
     text-align: left;
@@ -239,7 +239,13 @@
   font-size: 16px;
   font-weight: normal;
   }
-
+  .buy-ticket{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* align-items: flex-start; */
+    /* width: 298px; */
+   }
 
   @media (min-width: 768px ) {
     
@@ -291,6 +297,7 @@
       display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     }
     .part2{
@@ -300,9 +307,10 @@
       justify-content: space-between;
       width: calc(100% - 380px);
       margin: 0;
+      gap: 20px;
     }
     .about-text{
-      width: 569px;
+      max-width: 670px;
       height: 88px;
     }
     .about{
