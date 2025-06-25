@@ -1,46 +1,47 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './CreateEvent.css';
-import img2 from "../assets/img2.jpg"
-import backIcon from "../assets/backIcon.svg"
-import "../components/eventInfo.css"
-
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import "./CreateEvent.css";
+import img2 from "../assets/img2.jpg";
+import backIcon from "../assets/backIcon.svg";
+import "../components/eventInfo.css";
 
 function CreateEvent() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    title: '',
-    date: '',
-    time: '',
-    location: '',
-    description: '',
-    ticketPrice: '',
+    title: "",
+    date: "",
+    time: "",
+    location: "",
+    description: "",
+    ticketPrice: "",
+    tickets_available: "",
   });
 
   const [errors, setErrors] = useState({
-    ticketPrice: '',
+    ticketPrice: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    
-    if (name === 'ticketPrice') {
-      if (value === '' || /^\d*\.?\d*$/.test(value)) {
-        setFormData(prevState => ({
+
+    if (name === "ticketPrice") {
+      if (value === "" || /^\d*\.?\d*$/.test(value)) {
+        setFormData((prevState) => ({
           ...prevState,
-          [name]: value
+          [name]: value,
         }));
         if (errors.ticketPrice) {
-          setErrors(prev => ({
+          setErrors((prev) => ({
             ...prev,
-            ticketPrice: ''
+            ticketPrice: "",
           }));
         }
       }
     } else {
-      setFormData(prevState => ({
+      setFormData((prevState) => ({
         ...prevState,
-        [name]: value
+        [name]: value,
       }));
     }
   };
@@ -50,7 +51,7 @@ function CreateEvent() {
     const newErrors = { ...errors };
 
     if (formData.ticketPrice && isNaN(parseFloat(formData.ticketPrice))) {
-      newErrors.ticketPrice = 'Please enter a valid number';
+      newErrors.ticketPrice = "Please enter a valid number";
       isValid = false;
     }
 
@@ -58,42 +59,58 @@ function CreateEvent() {
     return isValid;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log('Event Data:', formData);
-      navigate('/');
+    if (!validateForm()) return;
+
+    const postData = {
+      name: formData.title,
+      date: formData.date,
+      time: formData.time,
+      location: formData.location,
+      about: formData.description,
+      tickets_available: parseInt(formData.tickets_available, 10),
+      price: `$${parseFloat(formData.ticketPrice).toFixed(2)}`,
+    };
+
+    try {
+      const res = await axios.post(
+        "https://ukfs5ejfcc.execute-api.eu-central-1.amazonaws.com/events",
+        postData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("✅ Event created:", res.data);
+      navigate("/");
+    } catch (err) {
+      console.error("❌ Error creating event:", err);
     }
   };
 
-
-    const backgroundImage = {
-        backgroundImage: `url(${img2})`,
-    }
+  const backgroundImage = {
+    backgroundImage: `url(${img2})`,
+  };
 
   const handleEventCardClick = () => {
-        navigate(`/`);
+    navigate("/");
   };
-  
+
   return (
-    <div className='eventInfo-card'>
-
-    <div className='bcg-img' style={backgroundImage}>
-        <div className='row1'>
-                    <div className='backBtn' onClick={() => handleEventCardClick()}>
-                       <img src={backIcon} className="back-icon" alt='backIcon'></img>
-                    </div>
-                    <div className='concert-name'>
-                        Create New Event
-                    </div>
-                    <div></div>
+    <div className="eventInfo-card">
+      <div className="bcg-img" style={backgroundImage}>
+        <div className="row1">
+          <div className="backBtn" onClick={handleEventCardClick}>
+            <img src={backIcon} className="back-icon" alt="backIcon" />
+          </div>
+          <div className="concert-name">Create New Event</div>
+          <div></div>
         </div>
-    </div>
+      </div>
 
-            {/* <div className='row2'> */}
-
-    <div className="create-event-container">
-        {/* <h2>Create New Event</h2> */}
+      <div className="create-event-container">
         <form onSubmit={handleSubmit} className="create-event-form">
           <div className="form-group">
             <label htmlFor="title">Event Title</label>
@@ -160,6 +177,18 @@ function CreateEvent() {
           </div>
 
           <div className="form-group">
+            <label htmlFor="tickets_available">Tickets Available</label>
+            <input
+              type="number"
+              id="tickets_available"
+              name="tickets_available"
+              value={formData.tickets_available}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="form-group">
             <label htmlFor="description">Description</label>
             <textarea
               id="description"
@@ -171,18 +200,21 @@ function CreateEvent() {
           </div>
 
           <div className="form-buttons">
-            <button type="submit" className="submit-button">Create Event</button>
-            <button type="button" className="cancel-button" onClick={() => navigate('/')}>
+            <button type="submit" className="submit-button">
+              Create Event
+            </button>
+            <button
+              type="button"
+              className="cancel-button"
+              onClick={() => navigate("/")}
+            >
               Cancel
             </button>
           </div>
         </form>
       </div>
-            {/* </div> */}
-
-
-   </div>
-  )
+    </div>
+  );
 }
 
-export default CreateEvent; 
+export default CreateEvent;

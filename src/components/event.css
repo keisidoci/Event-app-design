@@ -136,8 +136,9 @@
     .event-info{
         background: none;
         position: relative;
-        right: 140px;
+        /* right: 140px; */
         backdrop-filter: none;
+        left: 166px;
         box-shadow: none;
     }
     .no-br{
