@@ -3,11 +3,6 @@ import "../components/body.css";
 import Suggestions from "../components/Suggestions";
 import Buttons from "./Buttons";
 import Events from "./Events";
-// import img5 from "https://d37kvo87lzs6gw.cloudfront.net/assets/img5.jpeg"
-// import img1 from "../assets/img1.jpg"
-// import img2 from "../assets/img2.jpg"
-// import img4 from "../assets/img4.jpg"
-// import img3 from "../assets/img3.jpg"
 import { useNavigate } from "react-router-dom";
 import Nav from "../layout/Nav";
 import Search from "./Search";
@@ -49,8 +44,8 @@ const Body = () => {
 
   const imageLinks = suggestionData.map((suggestion) => suggestion.img);
 
-  const handleEventCardClick = () => {
-    navigate(`/Events`);
+  const handleEventCardClick = (eventId) => {
+    navigate(`/Events/${eventId}`);
   };
 
   const handleCreateEventClick = () => {
@@ -146,7 +141,7 @@ const Body = () => {
           color={"gray"}
         />
       </div>
-      <div className="event-component" onClick={() => handleEventCardClick()}>
+      <div className="event-component">
         {eventData.map((event, index) => (
           <Events
             key={index}
@@ -156,6 +151,7 @@ const Body = () => {
             name={event.name}
             info={event.info}
             background={imageLinks[index % imageLinks.length]}
+            onClick={() => handleEventCardClick(event.PK)}
           />
         ))}
       </div>

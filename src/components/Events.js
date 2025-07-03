@@ -35,8 +35,11 @@ const Events = ({ date, month, price, name, info, background, onClick }) => {
             background: "linear-gradient(#2C2C2C66,#72727200)",
             borderRadius: 20,
             position: "absolute",
-            top: 84,
-            left: 180,
+            top: window.innerWidth < 760 ? "unset" : 84,
+            left: window.innerWidth < 760 ? "unset" : 180,
+            bottom: window.innerWidth < 760 ? 12 : "unset",
+            zIndex: window.innerWidth < 760 ? 999 : "unset",
+            marginLeft: window.innerWidth < 760 ? 8 : 0,
           }}
           lineheight={"l13"}
           size={"h1"}

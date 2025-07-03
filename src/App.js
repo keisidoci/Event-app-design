@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Body />}></Route>
-          <Route path="/Events" element={<EventInfo/>}></Route>
+          <Route path="/Events/:id" element={<EventInfo/>}></Route>
           <Route path="/create-event" element={<CreateEvent/>}></Route>
         </Routes>
         

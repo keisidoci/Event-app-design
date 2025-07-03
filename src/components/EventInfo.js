@@ -11,9 +11,8 @@ import axios from "axios";
 const EventInfo = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  console.log("🚀 ~ EventInfo ~ id:", id)
+  console.log("🚀 ~ EventInfo ~ id:", id);
   const [eventData, setEventData] = useState([]);
-  console.log("🚀 ~ EventInfo ~ eventData:", eventData)
 
   const backgroundImage = {
     backgroundImage: `url(https://d37kvo87lzs6gw.cloudfront.net/assets/img2.jpg)`,
@@ -30,7 +29,7 @@ const EventInfo = () => {
           `https://ukfs5ejfcc.execute-api.eu-central-1.amazonaws.com/events/${id}`
         );
         setEventData(response.data);
-        console.log("🚀 ~ Response Data:", response.data);
+        console.log("🚀 ~ Response Data:", response);
       } catch (error) {
         console.error("❌ Error fetching data:", error);
       }
@@ -46,15 +45,15 @@ const EventInfo = () => {
           <div className="backBtn" onClick={() => handleEventCardClick()}>
             <img src={backIcon} className="back-icon" alt="backIcon"></img>
           </div>
-          <div className="concert-name">Dave</div>
+          <div className="concert-name">{eventData.name}</div>
           <div></div>
         </div>
       </div>
 
       <div className="row2">
         <div className="event-name">
-          <div className="dave">Dave</div>
-          <div className="eventPrice">$45.00</div>
+          <div className="dave">{eventData.name}</div>
+          <div className="eventPrice">{`${eventData.price}`}</div>
         </div>
 
         <div className="event-web">
@@ -65,16 +64,15 @@ const EventInfo = () => {
 
             <div className="calendar-month">
               <div className="month">
-                <strong>02 </strong>
+                <strong>{eventData.date} </strong>
               </div>
-              <div className="sep">September </div>
             </div>
             <hr className="hr1" />
             <div className="calendar-time">
               <div className="time">
-                <strong className="no-strong">10:00 PM </strong>
+                <strong className="no-strong">{eventData.time} </strong>
               </div>
-              <div className="tuesd">Tuesday</div>
+              {/* <div className="tuesd">Tuesday</div> */}
             </div>
           </div>
 
@@ -92,7 +90,7 @@ const EventInfo = () => {
               <img src={ticket} alt="ticket"></img>
             </div>
             <div className="info-ticket">
-              <p>5 tickets</p>
+              <p>{`${eventData.tickets_available} tickets`}</p>
             </div>
           </div>
         </div>
@@ -102,10 +100,7 @@ const EventInfo = () => {
         <div className="extended-info">
           <h4 className="about">About event</h4>
           <p className="about-text">
-            Lorem ipsum dolor sit amet. Ea nobis corporis ad fugiat culpa ut
-            quibusdam soluta aut aliquid saepe. Est explicabo neque aut
-            molestiae doloribus At fugiat ipsum non cupiditate soluta sed
-            dolorem asperiores aut quia perferendis sed possimus officiis.
+            {eventData.about || "No description available for this event."}
           </p>
         </div>
         <div className="buy-ticket">

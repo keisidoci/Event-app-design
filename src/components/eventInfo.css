@@ -1,29 +1,29 @@
-.eventInfo-card{
-    display: flex;
+.eventInfo-card {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* position: relative; */
   overflow: hidden;
-  color:  #FFFFFF;
+  color: #ffffff;
   align-items: center;
 }
-.bcg-img{
-    height: 585px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    mask-image: linear-gradient(to bottom, black, transparent 80%);
-   overflow: hidden;
-   width: 100%;
-   position: absolute;
+.bcg-img {
+  height: 585px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  mask-image: linear-gradient(to bottom, black, transparent 80%);
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
 }
-.part1{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
+.part1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 }
-.row1{
+.row1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,7 +31,7 @@
   margin-left: 16px;
   margin-top: 24px;
 }
-.row2{
+.row2 {
   height: 385px;
 
   display: flex;
@@ -42,26 +42,26 @@
   width: 100%;
 }
 
-.backBtn{
-    background: rgba(255, 255, 255, 0.1);
-    width: 42px;
-    height: 42px;
-    border-radius: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.backBtn {
+  background: rgba(255, 255, 255, 0.1);
+  width: 42px;
+  height: 42px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .back-icon {
-    width: 24px;
-    height: 24px;
-  }
-.concert-name{
-    font-size: 18px;
-    font-weight: bold;
-  }
+  width: 24px;
+  height: 24px;
+}
+.concert-name {
+  font-size: 18px;
+  font-weight: bold;
+}
 
-.event-name{
+.event-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -70,9 +70,9 @@
   margin-left: 16px;
   width: calc(100% - 32px);
   margin-bottom: 35px;
-  }
-  
-  .eventPrice{
+}
+
+.eventPrice {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,77 +82,31 @@
   background-color: #fff;
   font-size: 14px;
   font-weight: bold;
-  color: #2C2C2C;
-  }
+  color: #2c2c2c;
+}
 
-  .calendar{
+.calendar {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
-  }
-  .calendar-month,
-  .calendar-time{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .sep,.tuesd{
-    color: #CCCCCC;
-    font-size: 14px;
-  }
+  flex: 1;
+}
+.calendar-month,
+.calendar-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sep,
+.tuesd {
+  color: #cccccc;
+  font-size: 14px;
+}
 
-  .icon{
-    background: rgba(255, 255, 255, 0.1);
-    width: 42px;
-    flex-shrink: 0;
-    height: 42px;
-    border-radius: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 24px;
-  }
-  
-.month{
-    text-align: left;
-  font-size: 16px;
-  }
-
-.hr1{
-  margin: 0px;
-  margin-left: 24px;
-  margin-right: 24px;
-  height: 41px;
-  display: block;
-  opacity: 1;
-  color: #FFFFFF
-  }
-  
-  .time{
-    text-align: left;
-    font-size: 16px;
-    width: 90px;
-  }
-  
-  .location{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-shrink: 0;
-  }
-  .event-web{
-    width: 100%;
-    margin-left: 16px;
-  }
-  .dave{
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .icon2{
-    background: rgba(255, 255, 255, 0.1);
+.icon {
+  background: rgba(255, 255, 255, 0.1);
   width: 42px;
   flex-shrink: 0;
   height: 42px;
@@ -160,62 +114,113 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
   margin-right: 24px;
-  }
+}
 
-  .info{
-    margin-top: 18px;
-    font-size: 16px;
-  }
+.month {
+  text-align: left;
+  font-size: 16px;
+  white-space: nowrap;
+}
 
-  .ticket{
-    display: flex;
+.hr1 {
+  margin: 0px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 41px;
+  display: block;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.time {
+  text-align: left;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.location {
+  display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: flex-start;
+  flex-shrink: 0;
+  flex: 1;
+}
+.event-web {
+  width: 100%;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: flex-start;
+}
+.dave {
+  font-weight: bold;
+  font-size: 20px;
+}
+.icon2 {
+  background: rgba(255, 255, 255, 0.1);
+  width: 42px;
+  flex-shrink: 0;
+  height: 42px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.info {
+  font-size: 16px;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.icon3 {
+  background: rgba(255, 255, 255, 0.1);
+  width: 42px;
+  flex-shrink: 0;
+  height: 42px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+.info-ticket {
+  font-size: 16px;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+.part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 100%; */
+  margin-inline: 16px;
+}
+.about {
   text-align: left;
-  }
-  .icon3{
-    background: rgba(255, 255, 255, 0.1);
-    width: 42px;
-    flex-shrink: 0;
-    height: 42px;
-    border-radius: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-    margin-right: 24px;
-  }
-  .info-ticket{
-    margin-top: 18px;
-    font-size: 16px;
-    white-space: nowrap;
-  
-    text-overflow: ellipsis;
-  }
-  .part2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* width: 100%; */
-    margin-inline: 16px;
-  }
-  .about{
-    text-align: left;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .about-text{
-    text-align: left;
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 55px;
-  }
-  .ticketBtn{
-    background-color: #026cdf;
+  font-size: 16px;
+  font-weight: bold;
+}
+.about-text {
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 55px;
+}
+.ticketBtn {
+  background-color: #026cdf;
   border-radius: 5px;
-  width: 396px;
+  width: 100%;
   height: 48px;
   border: none;
   color: white;
@@ -225,51 +230,49 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
-  
-  }
+}
 
-  .ticketIcon{
+.ticketIcon {
   margin-right: 8px;
   margin-top: 17px;
   margin-bottom: 12px;
-  }
-  .text-t{
-    margin-top: 12px;
+}
+.text-t {
+  margin-top: 12px;
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: normal;
+}
+.buy-ticket {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* align-items: flex-start; */
+  /* width: 298px; */
+}
+
+@media (min-width: 768px) {
+  .row1 {
+    margin-left: 190px;
+    margin-right: 190px;
+    display: flex;
+    justify-content: space-between;
   }
-  .buy-ticket{
+  .concert-name {
+    font-size: 18px;
+    display: flex;
+    margin-left: 0;
+  }
+  .row2 {
+    height: 385px;
     display: flex;
     justify-content: center;
-    width: 100%;
-    /* align-items: flex-start; */
-    /* width: 298px; */
-   }
-
-  @media (min-width: 768px ) {
-    
-    .row1{
-      margin-left: 190px;
-      margin-right: 190px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .concert-name{
-      font-size: 18px;
-      display: flex;
-      margin-left: 0;
-    }
-    .row2{
-      height: 385px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: calc(100% - 390px);
-      top: 60px;
-    }
-    .event-name{
-      display: flex;
+    flex-direction: column;
+    width: calc(100% - 390px);
+    top: 60px;
+  }
+  .event-name {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -277,99 +280,91 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    }
-    .hr1{
-      rotate: calc(90deg);
-      height: 5px;
-      margin-left: 5px;
-      margin-right: 5px;
-      color: #FFFFFF;
-    }
-    .eventPrice{
-      width: 82px;
-      height: 36px;
-      font-size: 16px;
-    }
-    .dave{
-      font-size: 24px;
-    }
-    .event-web{
-      display: flex;
+  }
+  .hr1 {
+    rotate: calc(90deg);
+    height: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+  }
+  .eventPrice {
+    width: 82px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .dave {
+    font-size: 24px;
+  }
+  .event-web {
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
-    }
-    .part2{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: calc(100% - 380px);
-      margin: 0;
-      gap: 20px;
-    }
-    .about-text{
-      max-width: 670px;
-      height: 88px;
-    }
-    .about{
-      font-size: 18px;
-    }
-   .buy-ticket{
+  }
+  .part2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 380px);
+    margin: 0;
+    gap: 20px;
+  }
+  .about-text {
+    max-width: 670px;
+    height: 88px;
+  }
+  .about {
+    font-size: 18px;
+  }
+  .buy-ticket {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 298px;
-   }
-   .bcg-img{
+  }
+  .bcg-img {
     mask-image: linear-gradient(to bottom, black, transparent 100%);
     height: 525px;
-   }
-   .br{
+  }
+  .br {
     display: none;
-   }
-   
-   .month{
+  }
+
+  .month {
     font-weight: 10;
-    
-   }
-   .tuesd{
+  }
+  .tuesd {
     display: none;
-   }
-   .calendar-month{
+  }
+  .calendar-month {
     flex-direction: row;
-   }
-   .sep{
+  }
+  .sep {
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-left: 8px;
-   }
-   .time{
-    width: 160px;
-   }
-   
-   .calendar{
+  }
+  .calendar {
     margin-right: 0px;
     margin-left: 0;
     align-items: center;
     font-size: 16px;
-   }
-   .location{
+  }
+  .location {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 15px;
     margin-right: 0px;
-   }
-   .ticket{
-    font-size: 16px;
-    margin-bottom: 15px;
-    margin-right: 0px;
-    margin-left: 80px;
-   }
-   .no-strong{
-    font-weight: normal;
-   }
   }
+  .ticket {
+    font-size: 16px;
+    margin-right: 0px;
+  }
+  .no-strong {
+    font-weight: normal;
+  }
+}
