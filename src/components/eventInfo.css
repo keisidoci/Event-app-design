@@ -299,6 +299,7 @@
   .event-web {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
